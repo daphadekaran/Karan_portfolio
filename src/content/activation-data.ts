@@ -102,3 +102,4 @@ export const ACTIVATION_REEL: ActivationImage[] = [
     tags: ["Team Materra", "Celebration", "Milestone", "Digital Agronomy"],
   },
 ];
+

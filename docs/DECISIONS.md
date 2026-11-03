@@ -32,3 +32,4 @@
 ## ADR-007: GitHub Profile Link
 - **Status:** Confirmed by Karan (3 Nov 2026)
 - **Decision:** Link portfolio GitHub buttons to `https://github.com/daphadekaran/Karan_portfolio.git` / `https://github.com/daphadekaran`.
+

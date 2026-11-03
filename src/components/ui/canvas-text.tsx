@@ -132,3 +132,4 @@ export function CanvasText({ text, className, canvasClassName }: CanvasTextProps
     </div>
   );
 }
+

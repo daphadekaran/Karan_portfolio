@@ -113,3 +113,4 @@ export function BootPreloader({ onComplete }: { onComplete: () => void }) {
     </div>
   );
 }
+

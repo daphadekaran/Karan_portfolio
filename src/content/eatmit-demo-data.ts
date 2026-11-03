@@ -79,3 +79,4 @@ export const EATMIT_MENU_ITEMS = [
   { id: "M4", name: "Veg Hakka Noodles", category: "Chinese", activeDays: ["All"], price: 190 },
   { id: "M5", name: "Mango Kulfi", category: "Desserts", activeDays: ["Sat", "Sun"], price: 90 },
 ];
+

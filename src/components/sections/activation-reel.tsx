@@ -252,3 +252,4 @@ export function ActivationReel() {
     </section>
   );
 }
+

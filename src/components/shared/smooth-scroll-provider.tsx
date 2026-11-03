@@ -63,3 +63,4 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
     </SmoothScrollContext.Provider>
   );
 }
+

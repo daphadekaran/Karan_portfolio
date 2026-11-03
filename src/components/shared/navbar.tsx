@@ -152,3 +152,4 @@ export function Navbar({ onOpenCommandPalette }: NavbarProps) {
     </>
   );
 }
+
