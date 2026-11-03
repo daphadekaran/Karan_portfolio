@@ -2,6 +2,18 @@
 
 All notable changes across development phases will be logged here.
 
+## [UI Polish & Audit: Silver-Liquid Gradient & Auto-Swipe Theater] - 2026-11-03
+### Enhanced
+- **Silver-Liquid & Obsidian Gradient Backdrop**: Eliminated flat pitch black; introduced layered radial and linear silver gradients (`#18191E`, `#12141A`, `#0E0F13`) with platinum atmospheric wash (`rgba(200, 215, 235, 0.08)`).
+- **Specular Silver Rim Lighting**: Created physical double-border specular rims (`.silver-rim` & `.silver-card`) on cards and interactive elements with 1px top hairline highlights and cursor-following chrome sheen.
+- **Auto-Swipe Activation Cinema**:
+  - Auto-advancing slide timer (4.5s) with a live silver/signal progress hairline indicator.
+  - Interactive pause/play toggle, hover-to-pause, and keyboard arrow navigation (`←`, `→`).
+  - Animated signal laser scanline pass and instant HUD telemetry updates per photo.
+- **Typography & Specular Foil**: Hero headline updated with silver-to-white metallic text gradient.
+- **Reactive Specular Cursor**: Upgraded custom cursor with luminous silver ring casting soft ambient light.
+- Passed `npm run build` static export and phone number leak test.
+
 ## [P0 & P1: Foundation, Activation Reel & Static Build] - 2026-11-03
 ### Added
 - Git repository initialized and connected to `https://github.com/daphadekaran/Karan_portfolio.git`.
