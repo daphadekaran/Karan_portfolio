@@ -99,63 +99,63 @@ export function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+    <section id="contact" className="relative py-28 px-4 sm:px-8 max-w-7xl mx-auto">
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-16 pb-6 border-b border-soil-700/60">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 pb-6 border-b border-white/10">
         <div>
           <div className="flex items-center gap-2 text-xs font-mono text-signal-400 mb-2">
             <span>06</span>
-            <span>/</span>
-            <span className="uppercase tracking-widest text-cotton-50">DIRECT SIGNAL</span>
+            <span className="text-silver-600">/</span>
+            <span className="uppercase tracking-widest text-silver-200">DIRECT SIGNAL</span>
           </div>
-          <h2 className="text-4xl sm:text-6xl font-display font-extrabold text-cotton-50 tracking-tight">
+          <h2 className="text-4xl sm:text-6xl font-display font-extrabold text-white tracking-tight">
             Let&apos;s{" "}
             <CanvasText
               text="build"
-              className="text-marigold-500 underline decoration-soil-700 underline-offset-8"
+              className="text-marigold-500 underline decoration-white/20 underline-offset-8"
             />{" "}
             something real.
           </h2>
-          <p className="mt-2 text-sm sm:text-base text-cotton-400 max-w-xl">
-            Whether you are hiring for an entry-level Data Engineer / Analyst role.
+          <p className="mt-2 text-sm sm:text-base text-silver-300 max-w-xl leading-relaxed">
+            Whether you are hiring for an entry-level Data Engineer / Analyst role in Germany or Pune,
             or looking to build a clean agritech data system.
           </p>
         </div>
 
-        <div className="flex items-center gap-2 font-mono text-xs text-cotton-400 self-start md:self-end">
+        <div className="flex items-center gap-2 font-mono text-xs text-silver-400 self-start md:self-end">
           <span className="h-2 w-2 rounded-full bg-signal-400 animate-pulse" />
-          <span>I reply within 24 hours</span>
+          <span className="text-white font-semibold">I reply within 24 hours</span>
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Left Column: Direct Contact & Socials (5 cols) */}
         <div className="lg:col-span-5 space-y-6">
-          <LiquidGlass className="p-6 rounded-2xl border-soil-700 bg-soil-900/80 space-y-6">
+          <LiquidGlass className="p-6 sm:p-7 rounded-2xl border-white/15 bg-gradient-to-b from-[#181a24] to-[#0e1015] space-y-6 shadow-2xl">
             <div className="space-y-2">
-              <h4 className="font-display font-bold text-lg text-cotton-50">
+              <h4 className="font-display font-bold text-xl text-white">
                 Direct Communication
               </h4>
-              <p className="text-xs text-cotton-400 leading-relaxed font-sans">
+              <p className="text-xs text-silver-300 leading-relaxed font-sans">
                 No recruiter phone calls or spam traps. All inquiries land directly in my inbox at{" "}
-                <strong className="text-cotton-200">karandaphade001@gmail.com</strong>.
+                <strong className="text-white">karandaphade001@gmail.com</strong>.
               </p>
             </div>
 
             {/* Copy Email Button */}
             <button
               onClick={handleCopyEmail}
-              className="w-full flex items-center justify-between p-3.5 rounded-xl bg-soil-950 border border-soil-700 hover:border-marigold-500 font-mono text-xs transition-colors group"
+              className="w-full flex items-center justify-between p-4 rounded-xl bg-black/40 border border-white/15 hover:border-marigold-500 font-mono text-xs transition-colors group cursor-pointer shadow-inner"
             >
-              <div className="flex items-center gap-2.5 text-cotton-50">
+              <div className="flex items-center gap-2.5 text-white">
                 <Mail className="h-4 w-4 text-marigold-500" />
                 <span>karandaphade001@gmail.com</span>
               </div>
-              <span className="text-cotton-400 group-hover:text-marigold-500 flex items-center gap-1">
+              <span className="text-silver-400 group-hover:text-marigold-400 flex items-center gap-1">
                 {copiedEmail ? (
                   <>
                     <Check className="h-3.5 w-3.5 text-signal-400" />
-                    <span className="text-signal-400">Copied!</span>
+                    <span className="text-signal-400 font-bold">Copied!</span>
                   </>
                 ) : (
                   <>
@@ -167,39 +167,39 @@ export function ContactSection() {
             </button>
 
             {/* Quick Links */}
-            <div className="space-y-2 pt-2">
+            <div className="space-y-2.5 pt-2">
               <a
                 href="https://github.com/daphadekaran/Karan_portfolio.git"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-between p-3 rounded-lg bg-soil-800/60 hover:bg-soil-800 text-xs font-mono text-cotton-50 transition-colors"
+                className="w-full flex items-center justify-between p-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono text-white transition-colors border border-white/10"
               >
-                <div className="flex items-center gap-2">
-                  <GithubIcon className="h-4 w-4 text-cotton-400" />
+                <div className="flex items-center gap-2.5">
+                  <GithubIcon className="h-4 w-4 text-silver-400" />
                   <span>GitHub (@daphadekaran)</span>
                 </div>
-                <span className="text-cotton-400 text-[10px]">Open Repo ↗</span>
+                <span className="text-silver-400 text-[10px]">Open Repo ↗</span>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/karan-daphade-a960a8356/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-between p-3 rounded-lg bg-soil-800/60 hover:bg-soil-800 text-xs font-mono text-cotton-50 transition-colors"
+                className="w-full flex items-center justify-between p-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono text-white transition-colors border border-white/10"
               >
-                <div className="flex items-center gap-2">
-                  <LinkedinIcon className="h-4 w-4 text-cotton-400" />
+                <div className="flex items-center gap-2.5">
+                  <LinkedinIcon className="h-4 w-4 text-silver-400" />
                   <span>LinkedIn Profile</span>
                 </div>
-                <span className="text-cotton-400 text-[10px]">Connect ↗</span>
+                <span className="text-silver-400 text-[10px]">Connect ↗</span>
               </a>
 
               <a
                 href="/Karan_Daphade_Resume.pdf"
                 download="Karan_Daphade_Resume.pdf"
-                className="w-full flex items-center justify-between p-3 rounded-lg bg-marigold-500/10 hover:bg-marigold-500/20 text-xs font-mono text-marigold-500 border border-marigold-500/30 transition-colors"
+                className="w-full flex items-center justify-between p-3.5 rounded-xl bg-marigold-500/10 hover:bg-marigold-500/20 text-xs font-mono text-marigold-400 border border-marigold-500/30 transition-colors shadow-sm"
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2.5">
                   <FileText className="h-4 w-4" />
                   <span>Download Resume (PDF)</span>
                 </div>
@@ -211,23 +211,23 @@ export function ContactSection() {
 
         {/* Right Column: Web3Forms Submission Form (7 cols) */}
         <div className="lg:col-span-7">
-          <GlowingEffect glow spread={50} proximity={80}>
-            <div className="rounded-2xl border border-soil-700 bg-soil-900 p-6 sm:p-8 shadow-2xl">
+          <GlowingEffect glow spread={55} proximity={85} silverRim>
+            <div className="rounded-2xl border border-white/15 bg-gradient-to-b from-[#181a24] to-[#0e1015] p-6 sm:p-8 shadow-2xl backdrop-blur-md">
               {isSuccess ? (
                 <div className="py-12 text-center space-y-4">
-                  <div className="inline-flex p-3 rounded-full bg-signal-400/20 text-signal-400 border border-signal-400/40">
+                  <div className="inline-flex p-3.5 rounded-full bg-signal-400/20 text-signal-400 border border-signal-400/40 shadow-lg">
                     <CheckCircle2 className="h-8 w-8" />
                   </div>
-                  <h3 className="text-2xl font-display font-bold text-cotton-50">
+                  <h3 className="text-2xl font-display font-bold text-white">
                     Signal Transmitted.
                   </h3>
-                  <p className="text-sm text-cotton-400 max-w-sm mx-auto font-sans">
+                  <p className="text-sm text-silver-300 max-w-sm mx-auto font-sans leading-relaxed">
                     Got it. Thank you for reaching out. I review all messages and{" "}
-                    <strong className="text-marigold-500 font-mono">reply within 24 hours</strong>.
+                    <strong className="text-marigold-400 font-mono">reply within 24 hours</strong>.
                   </p>
                   <button
                     onClick={() => setIsSuccess(false)}
-                    className="mt-4 px-4 py-2 rounded-full bg-soil-800 hover:bg-soil-700 text-xs font-mono text-cotton-50 transition-colors"
+                    className="mt-4 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/15 text-xs font-mono text-white transition-colors border border-white/15 cursor-pointer"
                   >
                     Send another message
                   </button>
@@ -244,12 +244,12 @@ export function ContactSection() {
 
                   {/* Name Field */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-cotton-400">Your Name *</label>
+                    <label className="block text-xs font-mono text-silver-300">Your Name *</label>
                     <input
                       type="text"
                       placeholder="e.g. Elena Schmidt"
                       {...register("name")}
-                      className="w-full px-4 py-3 rounded-xl bg-soil-950 border border-soil-700 text-cotton-50 text-sm placeholder:text-cotton-400/50 focus:border-marigold-500 focus:outline-none font-mono"
+                      className="w-full px-4 py-3.5 rounded-xl bg-black/40 border border-white/15 text-white text-sm placeholder:text-silver-600 focus:border-marigold-500 focus:outline-none font-mono transition-colors shadow-inner"
                     />
                     {errors.name && (
                       <span className="text-[11px] font-mono text-vermilion-500">
@@ -260,14 +260,14 @@ export function ContactSection() {
 
                   {/* Email Field */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-cotton-400">
+                    <label className="block text-xs font-mono text-silver-300">
                       Email Address *
                     </label>
                     <input
                       type="email"
                       placeholder="elena@company.de"
                       {...register("email")}
-                      className="w-full px-4 py-3 rounded-xl bg-soil-950 border border-soil-700 text-cotton-50 text-sm placeholder:text-cotton-400/50 focus:border-marigold-500 focus:outline-none font-mono"
+                      className="w-full px-4 py-3.5 rounded-xl bg-black/40 border border-white/15 text-white text-sm placeholder:text-silver-600 focus:border-marigold-500 focus:outline-none font-mono transition-colors shadow-inner"
                     />
                     {errors.email && (
                       <span className="text-[11px] font-mono text-vermilion-500">
@@ -278,28 +278,28 @@ export function ContactSection() {
 
                   {/* Purpose Selector */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-cotton-400">
+                    <label className="block text-xs font-mono text-silver-300">
                       I am reaching out for:
                     </label>
                     <select
                       {...register("purpose")}
-                      className="w-full px-4 py-3 rounded-xl bg-soil-950 border border-soil-700 text-cotton-50 text-sm focus:border-marigold-500 focus:outline-none font-mono cursor-pointer"
+                      className="w-full px-4 py-3.5 rounded-xl bg-black/40 border border-white/15 text-white text-sm focus:border-marigold-500 focus:outline-none font-mono cursor-pointer transition-colors"
                     >
-                      <option value="Full-time role">Full-time Data / AI Role</option>
-                      <option value="Internship">Internship Opportunity</option>
-                      <option value="Freelance project">Freelance Data / Product Project</option>
-                      <option value="Just saying hi">Just Saying Hi</option>
+                      <option value="Full-time role" className="bg-[#121317]">Full-time Data / AI Role</option>
+                      <option value="Internship" className="bg-[#121317]">Internship Opportunity</option>
+                      <option value="Freelance project" className="bg-[#121317]">Freelance Data / Product Project</option>
+                      <option value="Just saying hi" className="bg-[#121317]">Just Saying Hi</option>
                     </select>
                   </div>
 
                   {/* Message Field */}
                   <div className="space-y-1.5">
-                    <label className="block text-xs font-mono text-cotton-400">Message *</label>
+                    <label className="block text-xs font-mono text-silver-300">Message *</label>
                     <textarea
                       rows={4}
                       placeholder="Tell me about your team, challenge, or project..."
                       {...register("message")}
-                      className="w-full px-4 py-3 rounded-xl bg-soil-950 border border-soil-700 text-cotton-50 text-sm placeholder:text-cotton-400/50 focus:border-marigold-500 focus:outline-none font-mono"
+                      className="w-full px-4 py-3.5 rounded-xl bg-black/40 border border-white/15 text-white text-sm placeholder:text-silver-600 focus:border-marigold-500 focus:outline-none font-mono transition-colors shadow-inner"
                     />
                     {errors.message && (
                       <span className="text-[11px] font-mono text-vermilion-500">
@@ -312,7 +312,7 @@ export function ContactSection() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-marigold-500 hover:bg-cotton-50 text-soil-950 font-mono text-sm font-bold tracking-tight transition-all duration-300 shadow-lg disabled:opacity-50 cursor-pointer"
+                    className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-marigold-500 to-marigold-400 hover:brightness-110 text-soil-950 font-mono text-sm font-bold tracking-tight transition-all duration-300 shadow-[0_0_30px_-5px_rgba(255,176,32,0.45)] disabled:opacity-50 cursor-pointer"
                   >
                     {isSubmitting ? (
                       <span>Sending Signal...</span>
@@ -324,7 +324,7 @@ export function ContactSection() {
                     )}
                   </button>
 
-                  <div className="text-[10px] text-cotton-400/80 font-mono text-center pt-2">
+                  <div className="text-[10px] text-silver-400 font-mono text-center pt-2">
                     🔒 Submissions are delivered securely to Gmail. Zero tracking cookies.
                   </div>
                 </form>

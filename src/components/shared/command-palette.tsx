@@ -149,11 +149,11 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
       onClick={onClose}
     >
       <div
-        className="w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl border border-soil-700/80 bg-soil-900"
+        className="w-full max-w-lg rounded-2xl overflow-hidden shadow-2xl border border-white/20 bg-gradient-to-b from-[#181a24] to-[#0e1015] silver-rim"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}
-        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-soil-700/60 bg-soil-950/50">
+        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-white/10 bg-white/5">
           <Command className="h-4 w-4 text-marigold-500" />
           <input
             type="text"
@@ -161,17 +161,17 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
             placeholder="Type a command or jump to section..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-transparent text-sm text-cotton-50 placeholder:text-cotton-400 focus:outline-none font-mono"
+            className="w-full bg-transparent text-sm text-white placeholder:text-silver-500 focus:outline-none font-mono"
           />
-          <kbd className="text-[10px] text-cotton-400 font-mono border border-soil-700 px-1.5 py-0.5 rounded">
+          <kbd className="text-[10px] text-silver-300 font-mono border border-white/15 px-1.5 py-0.5 rounded bg-white/5">
             ESC
           </kbd>
         </div>
 
         {/* Action List */}
-        <div className="max-h-80 overflow-y-auto p-2 divide-y divide-soil-800/40">
+        <div className="max-h-80 overflow-y-auto p-2 divide-y divide-white/5">
           {filtered.length === 0 ? (
-            <div className="px-4 py-8 text-center text-xs text-cotton-400 font-mono">
+            <div className="px-4 py-8 text-center text-xs text-silver-400 font-mono">
               No matching commands found.
             </div>
           ) : (
@@ -179,22 +179,22 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
               <button
                 key={item.id}
                 onClick={item.action}
-                className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-left text-xs font-mono text-cotton-50 hover:bg-soil-800 hover:text-marigold-500 transition-colors group"
+                className="w-full flex items-center justify-between px-3 py-2.5 rounded-xl text-left text-xs font-mono text-white hover:bg-white/10 hover:text-marigold-400 transition-colors group cursor-pointer"
               >
                 <div className="flex items-center gap-2.5">
-                  <span className="p-1 rounded bg-soil-800 group-hover:bg-soil-700 transition-colors">
+                  <span className="p-1.5 rounded-lg bg-white/5 group-hover:bg-white/10 transition-colors border border-white/10">
                     {item.icon}
                   </span>
                   <span>{item.label}</span>
                 </div>
-                <ArrowRight className="h-3 w-3 text-cotton-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <ArrowRight className="h-3 w-3 text-silver-400 opacity-0 group-hover:opacity-100 transition-opacity" />
               </button>
             ))
           )}
         </div>
 
         {/* Footer info */}
-        <div className="px-4 py-2 border-t border-soil-800/80 bg-soil-950/40 flex items-center justify-between text-[10px] font-mono text-cotton-400">
+        <div className="px-4 py-2 border-t border-white/10 bg-black/40 flex items-center justify-between text-[10px] font-mono text-silver-400">
           <span>Soil & Signal Command Line</span>
           <span>Press ESC to exit</span>
         </div>

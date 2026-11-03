@@ -10,6 +10,7 @@ interface GlowingEffectProps {
   disabled?: boolean;
   proximity?: number;
   spread?: number;
+  silverRim?: boolean;
 }
 
 export function GlowingEffect({
@@ -17,8 +18,9 @@ export function GlowingEffect({
   className,
   glow = true,
   disabled = false,
-  proximity = 64,
-  spread = 40,
+  proximity = 80,
+  spread = 50,
+  silverRim = true,
 }: GlowingEffectProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: -200, y: -200 });
@@ -55,25 +57,35 @@ export function GlowingEffect({
     return () => window.removeEventListener("pointermove", handlePointerMove);
   }, [disabled, proximity]);
 
-  if (disabled || isTouch) {
-    return <div className={cn("relative rounded-2xl", className)}>{children}</div>;
-  }
-
   return (
-    <div ref={containerRef} className={cn("relative rounded-2xl group", className)}>
-      {/* Subtle Glow Rim Border */}
-      {glow && (
+    <div
+      ref={containerRef}
+      className={cn(
+        "relative rounded-2xl group transition-all duration-300",
+        silverRim && "silver-rim",
+        className
+      )}
+    >
+      {/* Dynamic Specular Silver & Accent Rim Lighting */}
+      {glow && !disabled && !isTouch && (
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -inset-px rounded-[inherit] transition-opacity duration-300"
+          className="pointer-events-none absolute -inset-[1px] rounded-[inherit] transition-opacity duration-300 z-10"
           style={{
             opacity,
-            background: `radial-gradient(${spread}px circle at ${position.x}px ${position.y}px, rgba(255,176,32,0.4), rgba(255,90,54,0.2) 40%, rgba(62,224,195,0.15) 70%, transparent 100%)`,
+            background: `radial-gradient(${spread}px circle at ${position.x}px ${position.y}px, rgba(255, 255, 255, 0.7) 0%, rgba(203, 213, 225, 0.4) 25%, rgba(255, 176, 32, 0.3) 50%, rgba(62, 224, 195, 0.15) 75%, transparent 100%)`,
+            mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+            maskComposite: "exclude",
+            WebkitMaskComposite: "xor",
+            padding: "1px",
           }}
         />
       )}
-      {children}
+
+      {/* Internal Content Container */}
+      <div className="relative z-0 h-full w-full rounded-[inherit]">
+        {children}
+      </div>
     </div>
   );
 }
-

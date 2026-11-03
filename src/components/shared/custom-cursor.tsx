@@ -54,8 +54,8 @@ export function CustomCursor() {
       start + (end - start) * factor;
 
     const render = () => {
-      currentX = lerp(currentX, mouseX, 0.2);
-      currentY = lerp(currentY, mouseY, 0.2);
+      currentX = lerp(currentX, mouseX, 0.22);
+      currentY = lerp(currentY, mouseY, 0.22);
       setPosition({ x: currentX, y: currentY });
       animId = requestAnimationFrame(render);
     };
@@ -77,21 +77,21 @@ export function CustomCursor() {
 
   return (
     <>
-      {/* Precision center dot */}
+      {/* Precision Core Dot (Silver-White & Marigold) */}
       <div
         aria-hidden="true"
-        className="pointer-events-none fixed top-0 left-0 z-[9999] h-2 w-2 rounded-full bg-marigold-500 transition-opacity duration-150"
+        className="pointer-events-none fixed top-0 left-0 z-[9999] h-2 w-2 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.9)] transition-opacity duration-150"
         style={{
           transform: `translate3d(${position.x - 4}px, ${position.y - 4}px, 0)`,
         }}
       />
-      {/* Outer reactive halo */}
+      {/* Outer Specular Silver Sheen Halo */}
       <div
         aria-hidden="true"
         className={`pointer-events-none fixed top-0 left-0 z-[9998] rounded-full border transition-all duration-200 ease-out ${
           isHovered
-            ? "h-12 w-12 -ml-6 -mt-6 border-signal-400 bg-signal-400/10 scale-110"
-            : "h-8 w-8 -ml-4 -mt-4 border-marigold-500/40 bg-transparent"
+            ? "h-14 w-14 -ml-7 -mt-7 border-white/60 bg-white/[0.08] backdrop-blur-[1px] scale-105 shadow-[0_0_25px_rgba(203,213,225,0.25)]"
+            : "h-8 w-8 -ml-4 -mt-4 border-white/30 bg-white/[0.02]"
         }`}
         style={{
           transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
@@ -100,4 +100,3 @@ export function CustomCursor() {
     </>
   );
 }
-
