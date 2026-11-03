@@ -87,7 +87,7 @@ export function Footer() {
             Built with Next.js 16 (Static Export), Tailwind v4 &amp; Three.js • Inspired by Soil &amp; Signal
           </div>
           <div>
-            Open to Relocation • Verified 2026
+            Open to Relocate: Anywhere (India &amp; Worldwide) • Verified 2026
           </div>
         </div>
       </div>

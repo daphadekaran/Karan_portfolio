@@ -29,7 +29,7 @@ export function HeroSection() {
 
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-md font-mono text-xs text-silver-300 shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]">
             <span className="flex h-1.5 w-1.5 rounded-full bg-signal-400 animate-ping" />
-            <span className="text-white font-medium">Open to Relocate: Germany &amp; Pune</span>
+            <span className="text-white font-medium">Open to Relocate: Anywhere (India &amp; Worldwide)</span>
           </div>
 
           <div className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-white/10 bg-white/5 font-mono text-xs text-silver-400 backdrop-blur-md">

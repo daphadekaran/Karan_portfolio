@@ -31,7 +31,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     period: "2022 – Present",
     role: "Freelance Product / UI-UX Designer & Founder",
     organization: "Independent & eatmit POS",
-    location: "Jalna, Maharashtra, India 431203 (Open to Relocate)",
+    location: "Jalna, Maharashtra (Open to Relocate Anywhere)",
     highlight:
       "Designed 7+ web and mobile products for startups and small businesses; currently building eatmit restaurant POS SaaS.",
     bullets: [

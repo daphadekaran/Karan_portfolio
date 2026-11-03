@@ -18,7 +18,7 @@
 ## ADR-004: Materra AI Activation Reel
 - **Status:** Accepted
 - **Context:** User provided 5 authentic photos from Wardha & Jalna field sessions + personal portrait (`portrait.jpeg`).
-- **Decision:** Build an interactive "Field Telemetry & Activation Reel" featuring a dual-lens reveal (monochrome grain -> scanned teal beam -> full color), monospace GPS telemetry overlays (`20.7453° N, 78.6022° E`), audio wave indicators for WhatsApp Marathi queries, and a 3D perspective card stack.
+- **Decision:** Build an interactive "Field Telemetry & Activation Reel" featuring an auto-swipe cinema theater with progress countdown, dual-lens reveal (monochrome grain -> scanned teal beam -> full color), monospace GPS telemetry overlays (`20.7453° N, 78.6022° E`), audio wave indicators for WhatsApp Marathi queries, and a 3D perspective card stack.
 
 ## ADR-005: eatmit Branding & Product Lab
 - **Status:** Accepted
@@ -33,3 +33,6 @@
 - **Status:** Confirmed by Karan (3 Nov 2026)
 - **Decision:** Link portfolio GitHub buttons to `https://github.com/daphadekaran/Karan_portfolio.git` / `https://github.com/daphadekaran`.
 
+## ADR-008: Dynamic 3D WebGL Gradient Atmosphere & Global Relocation
+- **Status:** Confirmed by Karan (3 Nov 2026)
+- **Decision:** Replaced flat black background with an interactive 3D WebGL fluid canvas powered by `@firecms/neat`. Features a lustrous Silver Liquid Palette with warm Golden Shadows (`#FFFFFF`, `#CB9854`, `#CBD5E1`, `#167CB3`, `#1A1D26`), scroll-reactive flow, and specular silver rim lighting. Relocation status explicitly updated to "Open to Relocate: Anywhere (India & Worldwide)".

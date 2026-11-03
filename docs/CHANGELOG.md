@@ -2,6 +2,11 @@
 
 All notable changes across development phases will be logged here.
 
+## [Dynamic 3D Background & Global Relocation Update] - 2026-11-03
+### Added
+- **@firecms/neat 3D WebGL Fluid Background**: Integrated interactive animated canvas ([`NeatBackground`](file:///d:/portfolio_websit/src/components/shared/neat-background.tsx)) with a Silver Liquid & Golden Shadow palette (`#FFFFFF`, `#CB9854`, `#CBD5E1`, `#167CB3`, `#1A1D26`). Reacts dynamically to scroll position (`gradient.yOffset = window.scrollY * 0.4`) with atmospheric contrast scrim.
+- **Global Relocation Freedom**: Updated all badges, hero cards, contact copy, and footer status from regional locations to **"Open to Relocate: Anywhere (India & Worldwide)"**.
+
 ## [UI Polish & Audit: Silver-Liquid Gradient & Auto-Swipe Theater] - 2026-11-03
 ### Enhanced
 - **Silver-Liquid & Obsidian Gradient Backdrop**: Eliminated flat pitch black; introduced layered radial and linear silver gradients (`#18191E`, `#12141A`, `#0E0F13`) with platinum atmospheric wash (`rgba(200, 215, 235, 0.08)`).

@@ -62,7 +62,7 @@ export function JourneySection() {
                   </h3>
                   <div className="flex items-center gap-1.5 font-mono text-xs text-marigold-500">
                     <MapPin className="h-3 w-3" />
-                    <span>Jalna, Maharashtra (Open to relocate)</span>
+                    <span>Jalna, Maharashtra (Open to Relocate Anywhere)</span>
                   </div>
                 </div>
 

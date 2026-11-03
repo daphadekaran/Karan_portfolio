@@ -4,6 +4,7 @@ import "./globals.css";
 import { GrainOverlay } from "@/components/shared/grain-overlay";
 import { CustomCursor } from "@/components/shared/custom-cursor";
 import { SmoothScrollProvider } from "@/components/shared/smooth-scroll-provider";
+import { NeatBackground } from "@/components/shared/neat-background";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -92,6 +93,9 @@ export default function RootLayout({
 
         {/* Global 4% SVG Texture Grain */}
         <GrainOverlay />
+
+        {/* 3D Animated Liquid Silver & Golden Gradient Background */}
+        <NeatBackground />
 
         {/* Reactive Custom Cursor (Touch-disabled) */}
         <CustomCursor />

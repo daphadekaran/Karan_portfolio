@@ -117,8 +117,8 @@ export function ContactSection() {
             something real.
           </h2>
           <p className="mt-2 text-sm sm:text-base text-silver-300 max-w-xl leading-relaxed">
-            Whether you are hiring for an entry-level Data Engineer / Analyst role in Germany or Pune,
-            or looking to build a clean agritech data system.
+            Whether you are hiring for a Data Engineer / Analyst role anywhere in India or worldwide,
+            or looking to build a clean, resilient data system.
           </p>
         </div>
 
