@@ -2,15 +2,30 @@
 
 All notable changes across development phases will be logged here.
 
-## [P0: Planning & Project Inception] - 2026-11-03
+## [P0 & P1: Foundation, Activation Reel & Static Build] - 2026-11-03
 ### Added
-- Git repository initialized with remote `https://github.com/daphadekaran/Karan_portfolio.git`.
-- `/docs/PRD.md` synced from product requirements document.
-- `/docs/DECISIONS.md` established with confirmed architecture decisions ADR-001 through ADR-007.
-- `AGENTS.md` established with strict operational and redaction guidelines.
-- Verified authentic assets:
-  - Portrait: `portrait.jpeg`
-  - Field activation photos: Wardha & Jalna (`111905`, `111936`, `111951`, `112201`, `113007`)
-  - eatmit POS branding: `eatmit_logo_app.svg` and `eatmit_logo.png`
-  - Resume: `Karan_Daphade_Resume.pdf` (sanitized without phone number)
-- Plan approved by Karan. Ready for Phase P1 execution.
+- Git repository initialized and connected to `https://github.com/daphadekaran/Karan_portfolio.git`.
+- Setup `/docs/PRD.md`, `/docs/DECISIONS.md`, `/docs/CHANGELOG.md`, and `AGENTS.md`.
+- Full Next.js 16 App Router configuration with `output: 'export'` and Tailwind CSS v4 design tokens.
+- Design palette initialized: Soil Black (`#0A0908`), Cotton Cream (`#F4EFE5`), Marigold (`#FFB020`), Vermilion (`#FF5A36`), and Signal Teal (`#3EE0C3`).
+- 4% SVG noise grain overlay and custom reactive cursor.
+- Liquid glass navigation with active section detection and resume download trigger.
+- Command Palette (`Ctrl+K` / `⌘K`) for rapid keyboard navigation, email copying, and resume access.
+- Terminal boot preloader mounting `/field/jalna-wardha` with session-storage skip.
+- Living 3D field map in Three.js / R3F with low-power SVG scanline fallback.
+- **Materra AI Wardha & Jalna Activation Reel**:
+  - Interactive dual lens (Soil Raw vs Digital Signal HUD).
+  - Animated signal laser scanline unmasking vibrant color.
+  - Live HUD telemetry: Wardha & Jalna GPS coordinates, active sessions, and animated WhatsApp Marathi voice query waveform.
+  - Real-time simulated APMC mandi price ticker across 36 states (`agmarknet.gov.in`).
+- 6 detailed case study cards with glowing rims in the Work rail and dynamic static pages (`/work/[slug]`).
+- Interactive Stack as Pipeline diagram (Source → Transform → Store → Serve).
+- Journey section featuring Karan's portrait (`karan-portrait.jpg`) with grayscale-to-color proximity glow, and BAMU BCA / Materra internship milestones.
+- **eatmit Product Lab**:
+  - Official vector SVG logo integration.
+  - Interactive KDS ticket advance engine (New → Preparing → Ready).
+  - Dynamic table merge/split simulator.
+  - Day-wise and time-wise menu controller.
+- Direct Signal Contact form with Web3Forms integration, honeypot spam protection, and 24-hour response guarantee.
+- Automated phone number and private contact leak checker (`scripts/check-leak.js`).
+- Complete production static export build validated (`npm run build`) with zero errors and zero leaks.
